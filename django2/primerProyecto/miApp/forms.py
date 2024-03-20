@@ -42,6 +42,7 @@ class LoginForm(forms.Form):
 class CreateUserForm(forms.Form):
     username = forms.CharField(label='Nombre de usuario')
     password = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
+    phone = forms.CharField(label='Telefono')
     confirm_password = forms.CharField(label='Confirmar contraseña', widget=forms.PasswordInput)
 
 class ForgotPasswordForm(forms.Form):
